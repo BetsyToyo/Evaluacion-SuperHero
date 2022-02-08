@@ -3,8 +3,7 @@ $(function () {
     e.preventDefault();
 
     let input = $("input[type=text]").val();
-    console.log(input);
-
+    
     const regexNum = /^\d+$/;
 
     if (regexNum.test(input) == false) {
@@ -41,13 +40,7 @@ $(function () {
           .attr("alt", data.name)
           .attr("class", "img-fluid rounded-start");
 
-        let pesos=data.appearance.weight
-        console.log(pesos);
-          for (const peso of pesos) {
-            console.log(peso[1]);
-            $(".card-body").html();
-        }
-
+        
         $(".card-body").html(`
                     <h5 class="card-title">${data.name}</h5>
                     <p class="card-conexiones">Conexiones:${data.connections["group-affiliation"]} Familiares: ${data.connections.relatives}</p><hr>
@@ -59,7 +52,7 @@ $(function () {
 
                `);
 
-        console.log(data);
+        
 
         let total = Object.values(data.powerstats).reduce((acumulador,valor) => {
             return acumulador + parseInt(valor)
@@ -70,7 +63,7 @@ $(function () {
              y:(item[1]*100)/total,
              label:item[0]
          }))
-            console.log(datosGrafica);
+            
             
         
           function graf() {
