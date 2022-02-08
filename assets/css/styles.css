@@ -4,14 +4,22 @@
     box-sizing: border-box;    
 }
 
-
 body{
     font-family: 'Comic Neue', regular;
     background-image: url(/assets/img/descarga.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;  
+    position: relative;
+    min-height: 100vh;
     
 }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
 
 .hero-imagen{
     margin-left: auto;
@@ -19,6 +27,8 @@ body{
 }
 
 .resultado{
-    /* display: none; */
+    display: none; 
 }
+
+
 
