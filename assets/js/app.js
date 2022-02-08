@@ -10,15 +10,15 @@ $(function () {
     if (regexNum.test(input) == false) {
       document.querySelector(
         ".error"
-      ).innerHTML = `<p class="text-danger fw-bold fs-4"><span><img class="ops d-block img-fluid" src="assets/img/oops.png" alt="ops" width="10px" heigth="auto">Recorcholis Batman!! introduce un numero para descubrir tu superHero</span></p>`;
+      ).innerHTML = `<p class="text-danger fw-bold fs-4"><span><img class="ops d-block img-fluid mx-auto" src="assets/img/oops.png" alt="ops" width="10px" heigth="auto">Recorcholis Batman!! introduce un numero para descubrir tu superHero</span></p>`;
     } else if (input == "") {
       document.querySelector(
         ".error"
-      ).innerHTML = `<p class="text-danger fw-bold fs-4"><span><img class="ops d-block img-fluid" src="assets/img/oops.png" alt="ops" width="10px" heigth="auto">Recorcholis Batman!! introduce un numero para descubrir tu superHero</span></p>`;
+      ).innerHTML = `<p class="text-danger fw-bold fs-4"><span><img class="ops d-block img-fluid mx-auto" src="assets/img/oops.png" alt="ops" width="10px" heigth="auto">Recorcholis Batman!! introduce un numero para descubrir tu superHero</span></p>`;
     } else {
       document.querySelector(
         ".error"
-      ).innerHTML = `<p class="text-success fw-bold fs-4"><span><img class="ops d-block img-fluid" src="assets/img/wow.jpg" alt="ops" width="10px" heigth="auto">Wow!! Ahora te dire tu superHero</span></p>`;
+      ).innerHTML = `<p class="text-success fw-bold fs-4"><span><img class="ops d-block img-fluid mx-auto" src="assets/img/wow.jpg" alt="ops" width="10px" heigth="auto">Wow!! Ahora te dire tu superHero</span></p>`;
       $(".resultado").css("display", "block");
     }
 
